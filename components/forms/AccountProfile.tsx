@@ -81,23 +81,6 @@ const AccountProfile = ({ user, btnTitle }: Props) => {
 
     const hasImageChanged = isBase64Image(blob);
 
-    // if (hasImageChanged) {
-    //   const imgRes = await startUpload(files);
-    //   // Check if imgRes exists and has at least one element
-    //   if (imgRes && imgRes.length > 0) {
-    //     // Check if 'fileUrl' property exists in the object before accessing it
-    //     if ("fileUrl" in imgRes[0]) {
-    //       // Ensure 'fileUrl' is a string before assigning it to profile_photo
-    //       const fileUrl = imgRes[0].fileUrl as string;
-    //       values.profile_photo = fileUrl;
-    //     } else {
-    //       // Handle the case where 'fileUrl' doesn't exist or is not a string
-    //       // Provide a default value or handle accordingly
-    //       values.profile_photo = ""; // Provide a default value or handle accordingly
-    //     }
-    //   }
-    // }
-
     if (hasImageChanged) {
       const imgRes = await startUpload(files);
 

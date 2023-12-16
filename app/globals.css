@@ -144,7 +144,6 @@
 }
 
 .account-form_image-input {
-  background-color: transparent !important;
   @apply cursor-pointer border-none bg-transparent outline-none file:text-blue !important;
 }
 
